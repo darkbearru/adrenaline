@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "adrenaline-company",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -9,7 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.6",
     "@types/node": "^18",
     "nuxt": "^3.4.1"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9"
   }
 }
