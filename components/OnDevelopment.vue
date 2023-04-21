@@ -2,7 +2,7 @@
     <div class="flex flex-col bg-zinc-900">
         <main class="flex w-screen h-screen justify-center">
             <div class="wrapper">
-                <picture><img src="@/assets/img/old_logo.svg" /></picture>
+                <picture><img src="@/assets/img/old_logo.svg" alt="Компания «Адреналин» / Охота, РТуризм, Рыбалка"/></picture>
                 <div class="campfire">
                     <div class="sparks">
                         <div class="spark"></div>
