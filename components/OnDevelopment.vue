@@ -145,9 +145,13 @@
                 </div>
             </div>
         </main>
-        <footer class="flex flex-wrap w-screen content-around py-3">
-            <p class="text-zinc-300 px-3 py-1 text-center md:text-right">Чита, ул. Нечаева, 81</p>
-            <p class="text-zinc-300 px-3 py-1 text-center md:text-left">Тел. <small>8 (3022)</small> 55-50-50, <small>8 914</small> 808 5050</p>
+        <footer class="flex flex-wrap w-screen content-around py-3" itemscope itemtype="//schema.org/Organization">
+            <div class="text-zinc-300 px-3 py-1 text-center md:text-right" itemprop="address" itemscope itemtype="//schema.org/PostalAddress">
+                <span itemprop="addressLocality">г. Чита</span>, <span itemprop="streetAddress">ул. Нечаева, 81</span>
+            </div>
+            <div class="text-zinc-300 px-3 py-1 text-center md:text-left">
+                Тел. <span itemprop="telephone"><small>8 (3022)</small> 55-50-50</span>, <span itemprop="telephone"><small>8 914</small> 808 5050</span>
+            </div>
         </footer>
     </div>
 </template>
@@ -165,9 +169,9 @@ main picture {
     width: clamp(320px, 90%, 500px);
     height: auto;
     z-index: 1;
-    transform: translateY(-100px);
+    transform: translateY(-50px);
 }
-footer > p {
+footer > div {
     flex: 1 0 320px;
 }
 .campfire {
@@ -176,7 +180,7 @@ footer > p {
     width: 600px;
     height: 600px;
     transform-origin: center center;
-    transform: scale(0.65) translateX(-78%);
+    transform: scale(0.65) translateX(-78%) translateY(10%);
     z-index: 2;
 }
 .log {
